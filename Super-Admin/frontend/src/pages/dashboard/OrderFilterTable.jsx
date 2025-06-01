@@ -80,8 +80,6 @@ const orders = [
   // Note: Only 76 orders shown here for brevity, continue similarly for all 100.
 ];
 
-
-
 const ORDERS_PER_PAGE = 10;
 
 const OrderFilterTable = () => {
@@ -119,9 +117,9 @@ const OrderFilterTable = () => {
   return (
     <div className="d-flex align-items-center justify-content-center mt-2">
       <div className="bg-white pb-2 rounded shadow w-75 d-flex flex-column align-items-center">
-        <h2 className="text-xl font-semibold mt-3">Order Details</h2>
+        <h2 className="text-xl font-semibold mb-1">Order Details</h2>
 
-        <div className="d-flex flex-row justify-content-around w-100 px-5 mb-3 gap-2">
+        <div className="d-flex flex-row justify-content-around w-100 px-5 mb-3 gap-2 pt-3">
           <select
             className="border rounded p-2"
             value={month}
@@ -201,7 +199,7 @@ const OrderFilterTable = () => {
             onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
             disabled={currentPage === 1}
           >
-            &larr; Previous
+            &larr; 
           </button>
           <span className="align-self-center">
             Page {currentPage} of {totalPages || 1}
@@ -211,7 +209,7 @@ const OrderFilterTable = () => {
             onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
             disabled={currentPage === totalPages || totalPages === 0}
           >
-            Next &rarr;
+           &rarr;
           </button>
         </div>
 

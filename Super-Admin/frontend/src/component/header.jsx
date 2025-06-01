@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from '../assets/logo.jpg';
+import './style.css'
 
 const Header = () => {
   return (
+    <div> 
     <nav
       className="navbar navbar-expand-lg navbar-dark bg-dark px-4 fixed-top"
       style={{ height: '70px', zIndex: 1000}}
@@ -17,18 +19,20 @@ const Header = () => {
       </a>
       <div className="collapse navbar-collapse justify-content-end">
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link" href="/">Dashboard</a>
+          <li className="nav-item box mx-1">
+            <a className="nav-link text-white" href="/">Dashboard</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/add-user">Add User</a>
+          <li className="nav-item box mx-1">
+            <a className="nav-link text-white " href="/add-user">Add User</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/manage-users">Manage Users</a>
+          <li className="nav-item box mx-1">
+            <a className="nav-link text-white" href="/manage-users">Manage Users</a>
           </li>
         </ul>
       </div>
     </nav>
+    <div style={{marginBottom: '85px'}}></div>
+    </div>
   );
 };
 

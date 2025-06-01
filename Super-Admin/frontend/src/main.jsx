@@ -15,13 +15,12 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header />
     <BrowserRouter>
-      
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/add-user" element={<AddUserForm />} />
         <Route path="/manage-users" element={<AllUsers />} />
       </Routes>
-      
+      <Footer/>
     </BrowserRouter>
   </StrictMode>
 );

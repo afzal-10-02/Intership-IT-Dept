@@ -47,7 +47,7 @@ const OrderVerificationPipelineChart = () => {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-center" style={{ marginTop: '85px' }}>
+    <div className="d-flex align-items-center justify-content-center">
       <div className="d-flex flex-column align-items-center bg-white rounded shadow w-75">
         <h2 className="text-2xl font-bold mb-1">Order Verification Stages</h2>
         <Bar className="p-3" data={data} options={options} />
