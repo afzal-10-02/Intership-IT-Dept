@@ -92,10 +92,10 @@ function AllUsers() {
                   <td>{user.role}</td>
                   <td>
                     <button className="btn btn-sm btn-warning me-2" onClick={() => handleEdit(user._id)}>
-                      <i className="fas fa-edit"></i>
+                      <i className="fas fa-edit"><small>edit</small></i>
                     </button>
                     <button className="btn btn-sm btn-danger" onClick={() => deleteUser(user._id)}>
-                      <i className="fas fa-trash-alt"></i>
+                      <i className="fas fa-trash-alt"><small>delete</small></i>
                     </button>
                   </td>
                 </tr>

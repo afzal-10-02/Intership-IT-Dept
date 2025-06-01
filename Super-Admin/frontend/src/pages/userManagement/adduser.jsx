@@ -134,11 +134,11 @@ const AddUserForm = () => {
                                     className="form-check-input"
                                     type="radio"
                                     name="role"
-                                    id="approval"
-                                    value="approval"
+                                    id="approver"
+                                    value="approver"
                                     onChange={handleChange}
                                 />
-                                <label className="form-check-label" htmlFor="approval">Approval</label>
+                                <label className="form-check-label" htmlFor="approval">Approvar</label>
                             </div>
                         </div>
 

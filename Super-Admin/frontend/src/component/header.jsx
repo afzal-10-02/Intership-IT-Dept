@@ -1,11 +1,19 @@
 import React from 'react';
-
+import logo from '../assets/logo.jpg';
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-      <a className="navbar-brand fw-bold" href="#home">
-        IT Co-occurrence System
+    <nav
+      className="navbar navbar-expand-lg navbar-dark bg-dark px-4 fixed-top"
+      style={{ height: '70px', zIndex: 1000}}
+    >
+      <a className="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home">
+        <img
+          src={logo}
+          alt="Logo"
+          style={{ height: '70px', width: '80px' }}
+        />
+        <span className="ms-2">IT Concurrence System</span>
       </a>
       <div className="collapse navbar-collapse justify-content-end">
         <ul className="navbar-nav">

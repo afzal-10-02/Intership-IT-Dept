@@ -13,8 +13,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Header />
     <BrowserRouter>
-      <Header />
       
       <Routes>
         <Route path="/" element={<Dashboard />} />
@@ -22,7 +22,6 @@ createRoot(document.getElementById('root')).render(
         <Route path="/manage-users" element={<AllUsers />} />
       </Routes>
       
-      <Footer />
     </BrowserRouter>
   </StrictMode>
 );
